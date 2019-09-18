@@ -29,11 +29,11 @@ $black: rgba(0, 0, 0, 0.7); //
 $white: #FFFFFF; //
 $pre-color: #ff6908;
 $global-width: 640px; //
-$global-width-small: 95%;
+$global-width-small: 85%;
 $global-gutter: 30px;
 $body-background: $light-gray;//
 $container-background: $white;//
-$global-padding: 0px; //
+$global-padding: 30px; //
 $global-margin: 0px; //
 $global-radius: 3px;
 $global-rounded: 500px;
@@ -42,8 +42,8 @@ $global-breakpoint: $global-width + $global-gutter;
 // 2. Grid
 // -------
 
-$grid-column-count: 12;
-$column-padding-bottom: $global-padding;
+$grid-column-count: 8;
+$column-padding-bottom: 0px; //
 $container-radius: 0;
 
 // 3. Block Grid
