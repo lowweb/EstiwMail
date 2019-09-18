@@ -477,15 +477,12 @@ table.menu.text-center a {
   table.body .collapse .columns {
     padding-left: 0 !important;
     padding-right: 0 !important; }
-  th.small-1 {
+  th.small-2 {
     display: inline-block !important;
-    width: 12.5% !important; }
+    width: 25% !important; }
   th.small-6 {
     display: inline-block !important;
     width: 75% !important; }
-  th.small-7 {
-    display: inline-block !important;
-    width: 87.5% !important; }
   table.menu {
     width: 100% !important; }
     table.menu td,
