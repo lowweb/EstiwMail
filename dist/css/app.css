@@ -94,14 +94,6 @@ th.columns.last {
 th.columns table:not(.button) {
   width: 100%; }
 
-th.large-1 {
-  width: 50px;
-  padding-left: 15px;
-  padding-right: 15px; }
-
-th.large-1.first {
-  padding-left: 30px; }
-
 th.large-3 {
   width: 210px;
   padding-left: 15px;
@@ -171,9 +163,6 @@ th.large-7 {
 
 th.large-7.first {
   padding-left: 30px; }
-
-th.large-7.last {
-  padding-right: 30px; }
 
 th.large-7 center {
   min-width: 470px; }
@@ -463,7 +452,7 @@ table.menu.text-center a {
   table.body center {
     min-width: 0 !important; }
   table.body .container {
-    width: 85% !important; }
+    width: 95% !important; }
   table.body .columns {
     height: auto !important;
     -moz-box-sizing: border-box;
@@ -477,9 +466,6 @@ table.menu.text-center a {
   table.body .collapse .columns {
     padding-left: 0 !important;
     padding-right: 0 !important; }
-  th.small-2 {
-    display: inline-block !important;
-    width: 25% !important; }
   th.small-6 {
     display: inline-block !important;
     width: 75% !important; }
