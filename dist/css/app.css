@@ -24,14 +24,14 @@ img {
 
 center {
   width: 100%;
-  min-width: 640px; }
+  min-width: 600px; }
 
 a img {
   border: none; }
 
 p {
-  margin: 0 0 0 0px;
-  Margin: 0 0 0 0px; }
+  margin: 0 0 0 10px;
+  Margin: 0 0 0 10px; }
 
 table {
   border-spacing: 0;
@@ -52,16 +52,16 @@ table, tr, td {
 @media only screen {
   html {
     min-height: 100%;
-    background: #E5E5E5 !important; } }
+    background: #f3f3f3; } }
 
 table.body {
-  background: #E5E5E5 !important;
+  background: #f3f3f3;
   height: 100%;
   width: 100%; }
 
 table.container {
-  background: #FFFFFF;
-  width: 640px;
+  background: #fefefe;
+  width: 600px;
   margin: 0 auto;
   Margin: 0 auto;
   text-align: inherit; }
@@ -83,7 +83,7 @@ th.columns {
   margin: 0 auto;
   Margin: 0 auto;
   padding-left: 30px;
-  padding-bottom: 0px; }
+  padding-bottom: 0; }
   th.columns .columns {
     padding-left: 0 !important;
     padding-right: 0 !important; }
@@ -94,8 +94,16 @@ th.columns.last {
 th.columns table:not(.button) {
   width: 100%; }
 
+th.large-2 {
+  width: 90px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+th.large-2.first {
+  padding-left: 30px; }
+
 th.large-3 {
-  width: 210px;
+  width: 150px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -106,7 +114,7 @@ th.large-3.last {
   padding-right: 30px; }
 
 th.large-4 {
-  width: 290px;
+  width: 210px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -117,10 +125,10 @@ th.large-4.last {
   padding-right: 30px; }
 
 th.large-4 center {
-  min-width: 230px; }
+  min-width: 150px; }
 
 th.large-5 {
-  width: 370px;
+  width: 270px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -128,10 +136,10 @@ th.large-5.last {
   padding-right: 30px; }
 
 th.large-5 center {
-  min-width: 310px; }
+  min-width: 210px; }
 
 th.large-6 {
-  width: 450px;
+  width: 330px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -144,20 +152,20 @@ th.large-6.last {
 .collapse > tbody > tr > th.large-6 {
   padding-right: 0;
   padding-left: 0;
-  width: 480px; }
+  width: 360px; }
 
 .collapse th.large-6.first,
 .collapse th.large-6.last {
-  width: 495px; }
+  width: 375px; }
 
 th.large-6 center {
-  min-width: 390px; }
+  min-width: 270px; }
 
 .body .columns th.large-6 {
-  width: 75%; }
+  width: 60%; }
 
 th.large-7 {
-  width: 530px;
+  width: 390px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -165,10 +173,10 @@ th.large-7.first {
   padding-left: 30px; }
 
 th.large-7 center {
-  min-width: 470px; }
+  min-width: 330px; }
 
 th.large-8 {
-  width: 610px;
+  width: 450px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -198,7 +206,7 @@ h4.text-left {
 p.text-right {
   text-align: right; }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 630px) {
   .small-float-center {
     margin: 0 auto !important;
     float: none !important;
@@ -229,14 +237,14 @@ p,
 td,
 th,
 a {
-  color: rgba(0, 0, 0, 0.7);
-  font-family: Lucida Grande, Tahoma, Arial;
+  color: #0a0a0a;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   padding: 0;
   margin: 0;
   Margin: 0;
   text-align: left;
-  line-height: 24px; }
+  line-height: 130%; }
 
 h1,
 h2,
@@ -246,10 +254,10 @@ h5,
 h6 {
   color: inherit;
   word-wrap: normal;
-  font-family: Lucida Grande, Tahoma, Arial;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
-  margin-bottom: 33px;
-  Margin-bottom: 33px; }
+  margin-bottom: 10px;
+  Margin-bottom: 10px; }
 
 h1 {
   font-size: 34px; }
@@ -261,7 +269,7 @@ h3 {
   font-size: 28px; }
 
 h4 {
-  font-size: 25px; }
+  font-size: 24px; }
 
 h5 {
   font-size: 20px; }
@@ -275,35 +283,35 @@ p,
 td,
 th {
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 130%; }
 
 p {
-  margin-bottom: 0px;
-  Margin-bottom: 0px; }
+  margin-bottom: 10px;
+  Margin-bottom: 10px; }
   p.lead {
     font-size: 20px;
-    line-height: 1.6; }
+    line-height: 160%; }
 
 small {
-  font-size: 60%;
-  color: rgba(0, 0, 0, 0.7); }
+  font-size: 80%;
+  color: #cacaca; }
 
 a {
-  color: #0073BE;
+  color: #2199e8;
   text-decoration: none; }
   a:hover {
-    color: #5C2D91 !important; }
+    color: #147dc2; }
   a:active {
-    color: #5C2D91 !important; }
+    color: #147dc2; }
   a:visited {
-    color: #0073BE; }
+    color: #2199e8; }
 
 span.preheader {
   display: none !important;
   visibility: hidden;
   mso-hide: all !important;
   font-size: 1px;
-  color: #E5E5E5 !important;
+  color: #f3f3f3;
   line-height: 1px;
   max-height: 0px;
   max-width: 0px;
@@ -312,22 +320,22 @@ span.preheader {
 
 table.button {
   width: auto;
-  margin: 0 0 0px 0;
-  Margin: 0 0 0px 0; }
+  margin: 0 0 16px 0;
+  Margin: 0 0 16px 0; }
   table.button table td {
     text-align: left;
-    color: #FFFFFF;
-    background: #0073BE;
-    border: 0px solid #0073BE; }
+    color: #fefefe;
+    background: #2199e8;
+    border: 2px solid #2199e8; }
     table.button table td a {
-      font-family: Lucida Grande, Tahoma, Arial;
+      font-family: Helvetica, Arial, sans-serif;
       font-size: 16px;
       font-weight: bold;
-      color: #FFFFFF;
+      color: #fefefe;
       text-decoration: none;
       display: inline-block;
-      padding: 9px 24px 10px 24px;
-      border: 0 solid #0073BE;
+      padding: 8px 16px 8px 16px;
+      border: 0 solid #2199e8;
       border-radius: 3px; }
   table.button.radius table td {
     border-radius: 3px;
@@ -339,7 +347,7 @@ table.button table tr td a:visited,
 table.button.large:hover table tr td a,
 table.button.large:active table tr td a,
 table.button.large table tr td a:visited {
-  color: #FFFFFF; }
+  color: #fefefe; }
 
 table.button.large table a {
   padding: 10px 20px 10px 20px;
@@ -360,38 +368,38 @@ table.button.expand {
 table.button:hover table td,
 table.button:visited table td,
 table.button:active table td {
-  background: #00548b;
-  color: #FFFFFF; }
+  background: #147dc2;
+  color: #fefefe; }
 
 table.button:hover table a,
 table.button:visited table a,
 table.button:active table a {
-  border: 0 solid #00548b; }
+  border: 0 solid #147dc2; }
 
 table.button.secondary table td {
   background: #777777;
-  color: #FFFFFF;
+  color: #fefefe;
   border: 0px solid #777777; }
 
 table.button.secondary table a {
-  color: #FFFFFF;
+  color: #fefefe;
   border: 0 solid #777777; }
 
 table.button.secondary:hover table td {
   background: #919191;
-  color: #FFFFFF; }
+  color: #fefefe; }
 
 table.button.secondary:hover table a {
   border: 0 solid #919191; }
 
 table.button.secondary:hover table td a {
-  color: #FFFFFF; }
+  color: #fefefe; }
 
 table.button.secondary:active table td a {
-  color: #FFFFFF; }
+  color: #fefefe; }
 
 table.button.secondary table td a:visited {
-  color: #FFFFFF; }
+  color: #fefefe; }
 
 table.button.success table td {
   background: #02C39A;
@@ -407,30 +415,30 @@ table.button.success:hover table a {
   border: 0 solid #019172; }
 
 table.callout {
-  margin-bottom: 0px;
-  Margin-bottom: 0px; }
+  margin-bottom: 16px;
+  Margin-bottom: 16px; }
 
 th.callout-inner {
   width: 100%;
-  border: 1px solid #cccccc;
+  border: 1px solid #cbcbcb;
   padding: 10px;
-  background: #FFFFFF; }
+  background: #fefefe; }
   th.callout-inner.primary {
-    background: #cfecff;
+    background: #def0fc;
     border: 1px solid #444444;
-    color: rgba(0, 0, 0, 0.7); }
+    color: #0a0a0a; }
   th.callout-inner.secondary {
     background: #ebebeb;
     border: 1px solid #444444;
-    color: rgba(0, 0, 0, 0.7); }
+    color: #0a0a0a; }
 
 table.menu {
-  width: 640px; }
+  width: 600px; }
   table.menu th.menu-item {
     padding: 10px;
     padding-right: 10px; }
     table.menu th.menu-item a {
-      color: #0073BE; }
+      color: #2199e8; }
 
 table.menu.vertical th.menu-item {
   padding: 10px;
@@ -445,14 +453,14 @@ table.menu.text-center a {
 .menu[align="center"] {
   width: auto !important; }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 630px) {
   table.body img {
     width: auto;
     height: auto; }
   table.body center {
     min-width: 0 !important; }
   table.body .container {
-    width: 95% !important; }
+    width: 90% !important; }
   table.body .columns {
     height: auto !important;
     -moz-box-sizing: border-box;
@@ -466,9 +474,15 @@ table.menu.text-center a {
   table.body .collapse .columns {
     padding-left: 0 !important;
     padding-right: 0 !important; }
+  th.small-3 {
+    display: inline-block !important;
+    width: 30% !important; }
   th.small-6 {
     display: inline-block !important;
-    width: 75% !important; }
+    width: 60% !important; }
+  th.small-7 {
+    display: inline-block !important;
+    width: 70% !important; }
   table.menu {
     width: 100% !important; }
     table.menu td,
