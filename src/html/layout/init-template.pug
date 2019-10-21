@@ -2,6 +2,9 @@ include header-img.pug
 include icn-cap.pug
 include block-one.pug
 include btn-green.pug
+include btn-purple.pug
+include btn-red.pug
+include block-two.pug
 
 mixin initTemplate (params)
     <head>
@@ -48,129 +51,20 @@ mixin initTemplate (params)
         +headerImg (params.headerImg)
         +icnCap (params.icn, params.caption)
         +blockOne (params.blockOne)
+        
         if params.btnType=="green"
-        +btnGreen (params.btnCaption)
+            +btnGreen (params.btnCaption)
+        if params.btnType=="purple"
+            +btnPurple (params.btnCaption)
+        if params.btnType=="red"
+            +btnRed (params.btnCaption)    
 
-        <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; border-spacing:0; margin:0; border:0;">
-        <tbody>
-        <tr>
-        <td style="padding-left:15px; padding-right:15px;">
-        <table align="center" class="r" style="margin: 0 auto;background-color:#ffffff;border-spacing: 0;width:640px;">
-        <tbody>
-        <tr>
-        <td style="padding-top:0px;padding-bottom:40px;padding-left:30px;padding-right:30px;">
-        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-        <tbody>
-        <tr>
-        <td style="text-align: left; padding: 0 0 0;">
-        <div style="margin-right: auto; font-family: Lucida Grande, Tahoma, Arial; color:#000000;font-size:16px;line-height:1.45;">Либо, перейдите по указанной ссылке: 
-        <br>
-        <a href="https://my.estiw.ru/registration/activate" style="color:#0073BE;text-decoration:none;" target="_blank">https://my.estiw.ru/registration/activate<br></a><br>Ваш логин (имя пользователя) в системе:<br>
-        <strong>yourSystemLogin</strong><br>
-        <br>Приятного использования сервиса!<br>
-        </div>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table><!--/record--><!--record_mail-->
-        <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; border-spacing:0; margin:0; border:0;">
-        <tbody>
-        <tr>
-        <td style="padding-left:15px; padding-right:15px;">
-        <table align="center" class="r" style="margin: 0 auto;background-color:#ffffff;border-spacing: 0;width:640px;">
-        <tbody>
-        <tr>
-        <td style="padding-left:0;padding-right:0;">
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tbody>
-        <!-- <tr>
-        <td height="15px" style="height:15px;"></td>
-        </tr> -->
-        <tr>
-        <td height="1px" style="height:1px; background-color:#e6e6e6;"></td>
-        </tr>
-        <!-- <tr>
-        <td height="15px" style="height:15px;"></td>
-        </tr> -->
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table><!--/record--><!--record_mail-->
-        <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; border-spacing:0; margin:0; border:0;">
-        <tbody>
-        <tr>
-        <td style="padding-left:15px; padding-right:15px;">
-        <table align="center" class="r" style="margin: 0 auto;background-color:#ffffff;border-spacing: 0;width:640px;">
-        <tbody>
-        <tr>
-        <td style="padding-top:30px;padding-bottom:30px;padding-left:30px;padding-right:30px;">
-        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-        <tbody>
-        <tr>
-        <td style="text-align: center; padding: 0 0 0;">
-        <div style="margin: 0 auto; font-family: Lucida Grande, Tahoma, Arial; color:#e6e6e6;font-size:14px;line-height:1.4;">
-        <a href="#" style="color:#0073BE;text-decoration:none;padding-right: 10px;">О компании</a> | <a href="#" style="color:#0073BE;text-decoration:none;padding-right: 10px;padding-left: 10px;">Услуги</a> | <a href="#" style="color:#0073BE;text-decoration:none;padding-right: 10px;padding-left: 10px;">Партнерам</a> | <a href="#" style="color:#0073BE;text-decoration:none;padding-right: 10px;padding-left: 10px;">Новости</a> | <a href="#" style="color:#0073BE;text-decoration:none;padding-right: 10px;padding-left: 10px;">Контакты</a> | <a href="#" style="color:#0073BE;text-decoration:none;padding-left: 10px;">Вход в ЛК</a><br>
-        </div>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table><!--/record--><!--record_mail-->
-        <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; border-spacing:0; margin:0; border:0;">
-        <tbody>
-        <tr>
-        <td style="padding-left:15px; padding-right:15px;">
-        <table align="center" class="r" style="margin: 0 auto;border-spacing: 0;width:640px;">
-        <tbody>
-        <tr>
-        <td style="padding-top:45px;padding-bottom:60px;padding-left:30px;padding-right:30px;">
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tbody>
-        <tr>
-        <td style="text-align: center;">
-        <div style="margin: 0 auto; font-weight: normal; font-family: Lucida Grande, Tahoma, Arial; color:#a19b9b;font-size:14px;line-height:1.5;max-width:550px;">Не отвечайте на это письмо.<br>Чтобы получить помощь наших специалистов, нажмите <a href="#" style="color:#0073BE;text-decoration:none;">связаться с нами</a>
-        </div>
-        </td>
-        </tr>
-        <tr>
-        <td style="text-align: center; padding-top: 25px;">
-        <div style="margin: 0 auto; font-weight: normal; font-family: Lucida Grande, Tahoma, Arial; color:#a19b9b;font-size:14px;">© Эстив 2008 – 2019
-        </div>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        </td>
-        </tr>
-        </tbody>
-        </table><!--/record-->
+        +blockTwo (params.blockTwo)
+        include footer.pug
+        include resume.pug
+
     </td>
     </tr>
     </tbody>
-    </table><!--/allrecords-->
+    </table>
     </body>

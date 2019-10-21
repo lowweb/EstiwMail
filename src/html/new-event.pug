@@ -1,0 +1,20 @@
+//- include mixins/fill-button.pug
+include layout/init-template.pug
+
+- var caption = "Новое событие";
+- var headerImg = "https://estiw.ru/Content/images/e_mail/header.png"
+- var icn = "https://estiw.ru/Content/images/e_mail/new-event.png"
+-var blockOne = "Что-то произошло, например, изменился курс доллара и все цены в запросе существенно поменялись, нужно срочно просмотреть, поэтому, нажмите на кнопку (краткое описание события):"
+-var btnCaption = "Перейти"
+-var btnType = "purple"
+-var blockTwo = "Либо, перейдите по указанной ссылке:<br><a href='https://my.estiw.ru/user/somecategory/something-something/andagain/reallylonglinkaddress' style='color:#0073BE;text-decoration:none;' target='_blank'>https://my.estiw.ru/user/somecategory/something-something/andagain/reallylonglinkaddress<br></a><br><br>Приятного использования сервиса!<br>"
+
+html
+    +initTemplate({caption: caption, 
+                   headerImg: headerImg,
+                   icn: icn,
+                   blockOne: blockOne,
+                   btnCaption: btnCaption,
+                   btnType: btnType,
+                   blockTwo: blockTwo
+                   })
