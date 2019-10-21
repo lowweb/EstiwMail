@@ -1,0 +1,18 @@
+//- include mixins/fill-button.pug
+include layout/init-template.pug
+
+- var caption = "Завершение регистрации";
+- var headerImg = "https://estiw.ru/Content/images/e_mail/header.png"
+- var icn = "https://i.postimg.cc/PxnxNdrH/user-gr.png"
+-var blockOne = "Чтобы завершить процедуру регистрации, необходимо активировать Ваш аккаунт. Это можно сделать нажав кнопку ниже:"
+-var btnCaption = "Активировать аккаунт"
+-var bntType = "green"
+
+html
+    +initTemplate({caption: caption, 
+                   headerImg: headerImg,
+                   icn: icn,
+                   blockOne: blockOne,
+                   btnCaption: btnCaption,
+                   btnType: bntType,
+                   })
