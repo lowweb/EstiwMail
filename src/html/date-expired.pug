@@ -1,0 +1,19 @@
+include layout/init-template.pug
+
+- var caption = "Истекло время валидности ставки. Запрос отменен";
+- var headerImg = "https://estiw.ru/Content/images/e_mail/header.png"
+- var icn = "https://estiw.ru/Content/images/e_mail/date-expired.png"
+-var blockOne = "Дата валидности ставки запроса <strong>«Доставка контейнеров из Кореи»</strong> наступила. Чтобы принять меры, нажмите на кнопку: "
+-var btnCaption = "Перейти к запросу"
+-var btnType = "red"
+-var blockTwo = "Либо, перейдите по указанной ссылке:<br><a href='https://my.estiw.ru/registration/activate' style='color:#0073BE;text-decoration:none;' target='_blank'>https://my.estiw.ru/registration/activate<br></a><br><br>Приятного использования сервиса!<br>"
+
+html
+    +initTemplate({caption: caption, 
+                   headerImg: headerImg,
+                   icn: icn,
+                   blockOne: blockOne,
+                   btnCaption: btnCaption,
+                   btnType: btnType,
+                   blockTwo: blockTwo
+                   })

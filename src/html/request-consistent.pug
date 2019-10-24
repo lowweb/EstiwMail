@@ -1,0 +1,19 @@
+include layout/init-template.pug
+
+- var caption = "Запрос согласуется экспертом";
+- var headerImg = "https://estiw.ru/Content/images/e_mail/header.png"
+- var icn = "https://estiw.ru/Content/images/e_mail/request-consistent.png"
+-var blockOne = "Запрос <strong>«Доставка контейнеров из Кореи»</strong> проходит этап согласование экспертом/менеджером. Чтобы следить за статусом запроса, нажмите на кнопку:"
+-var btnCaption = "Перейти к запросу"
+-var btnType = "purple"
+-var blockTwo = "Либо, перейдите по указанной ссылке:<br><a href='https://my.estiw.ru/registration/activate' style='color:#0073BE;text-decoration:none;' target='_blank'>https://my.estiw.ru/registration/activate<br></a><br><br>Приятного использования сервиса!<br>"
+
+html
+    +initTemplate({caption: caption, 
+                   headerImg: headerImg,
+                   icn: icn,
+                   blockOne: blockOne,
+                   btnCaption: btnCaption,
+                   btnType: btnType,
+                   blockTwo: blockTwo
+                   })

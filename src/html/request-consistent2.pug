@@ -1,0 +1,19 @@
+include layout/init-template.pug
+
+- var caption = "Вам передана редакция запроса на согласование";
+- var headerImg = "https://estiw.ru/Content/images/e_mail/header.png"
+- var icn = "https://estiw.ru/Content/images/e_mail/request-consistent2.png"
+-var blockOne = "Редакция запроса <strong>«Доставка контейнеров из Кореи»</strong> передана вам на согласование. Чтобы внести изменения или утвердить редакцию, нажмите на кнопку:"
+-var btnCaption = "Перейти к запросу"
+-var btnType = "purple"
+-var blockTwo = "Либо, перейдите по указанной ссылке:<br><a href='https://my.estiw.ru/registration/activate' style='color:#0073BE;text-decoration:none;' target='_blank'>https://my.estiw.ru/registration/activate<br></a><br><br>Приятного использования сервиса!<br>"
+
+html
+    +initTemplate({caption: caption, 
+                   headerImg: headerImg,
+                   icn: icn,
+                   blockOne: blockOne,
+                   btnCaption: btnCaption,
+                   btnType: btnType,
+                   blockTwo: blockTwo
+                   })
