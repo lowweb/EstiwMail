@@ -17,7 +17,7 @@
     "rimraf": "^3.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp-rigger": "^0.5.8",
     "gulp-watch": "^5.0.1"
   }
